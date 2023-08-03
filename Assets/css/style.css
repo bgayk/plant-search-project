@@ -1,0 +1,170 @@
+:root {
+  --main: darkseagreen;
+  --dark: darkslategray;
+  --light: #dfecdf;
+  --font: #70a970;
+}
+
+body {
+  background-color: var(--light);
+}
+.hero {
+  width: 100% vw;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  background-color: var(--main);
+  font-weight: bolder;
+}
+#srchclr {
+  color: #5b7859;
+}
+.subtitle li {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.hero-header {
+  margin: 0.25rem;
+  border: 3.5px solid var(--dark);
+  font-family: "Lunasima";
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.column {
+  margin: 1px;
+  width: 100%;
+  border: 3.5px solid var(--dark);
+  border-radius: 15px;
+  background-color: var(--main);
+  font-family: "Lunasima";
+}
+
+.columns {
+  margin: 0.25rem;
+}
+
+.card {
+  margin: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  border: 2px solid var(--dark);
+  border-radius: 15px;
+  font-family: "Lunasima";
+}
+.custom-font {
+  color: var(--dark);
+  font-family: "Lunasima";
+}
+.card a {
+  color: var(--font);
+  font-family: "Lunasima";
+}
+.card a:hover {
+  color: var(--dark);
+  font-family: "Lunasima";
+}
+.custom-width {
+  display: flex;
+  flex-wrap: wrap;
+  width: 275px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--light);
+  cursor: pointer;
+}
+.dropdown-content {
+  box-shadow: 1px 1px 12px 5px var(--dark);
+}
+
+.search-button:hover,
+.dropdown button:hover {
+  background-color: var(--light);
+}
+
+.modal-button:hover {
+  background-color: var(--light);
+}
+
+.modal-button {
+  background-color: #f6faf6;
+  border-color: var(--dark);
+  font-family: "lunasima";
+  color: var(--dark);
+  text-decoration: bold;
+}
+
+.savebutton {
+  background-color: var(--light);
+  border-color: var(--dark);
+  width: 90px;
+  height: 40px;
+  font-family: "Lunasima";
+  color: var(--dark);
+  justify-content: center;
+  align-items: center;
+}
+
+.savebutton:hover {
+  background-color: #dfecdf;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+tr {
+  background-color: #f6faf6;
+}
+.table tbody tr:hover {
+  background-color: var(--light);
+}
+
+.table,
+.table thead th,
+.table tbody {
+  border: 1px solid var(--dark);
+}
+
+.table-container {
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+  background-color: var(--main);
+  font-family: "Lunasima";
+}
+
+th p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: "lunasima";
+  color: var(--dark);
+  font-size: medium;
+}
+
+.box {
+  background-color: var(--light);
+}
+
+.modal-head,
+.modal-foot {
+  background-color: #dfecdf;
+  border: 3px solid #5b7859;
+}
+
+.modal-body {
+  background-color: #f8fbf8;
+  border-left: 3px solid #5b7859;
+  border-right: 3px solid #5b7859;
+}
+
+.modal-body-p {
+  margin-bottom: 15px;
+}
