@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Search Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="hero hero-header">
+      <div class="container is-centered">
+        <h1 class="title" hero-title>Plant<span id="srchclr">Search</span></h1>
+        <ul class="subtitle" hero-subtitle>
+          <!-- <li id="City">City:</li>
+          <li id="Zone">Zone:</li>
+          <li id="Weather">Weather:</li> -->
+        </ul>
+      <section class="my-4">
+       <!-- hardiness start -->
+    <button class="button is-rounded modal-button hardbutton">
+      Hardiness Helper!
+    </button>
+    <div class="modal modal-element">
+      <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head modal-head custom-font">
+            <p class="modal-card-title"> Hardiness Zones Help Make Happy Plants!</p>
+          </header>
+          <section class="modal-card-body modal-body">
+          <p class="modal-body-p">
+            The world is divided up into different zones based on climate.
+            In order to grow happy, healthy plants in your outdoor garden
+            you will need to select a plant that can thrive in your
+            hardiness zone. Input your zip code below to find out which zone
+            you live in!
+          </p>
+          <textarea
+            class="textareah is-small custom-font zipcode"
+            placeholder="Zip Code"
+            rows="1"
+          ></textarea>
+          <br />
+          <button class="button submit-button" type="submit" value="Submit">
+            <p class="content custom-font submit-button">Submit</p>
+          </button>
+        </section>
+        <footer class="modal-card-foot modal-foot has-text-centered is-small"></footer>
+        </footer>
+        <button class="modal-close is-large" aria-label="close" data-bulma-modal="close"></button>
+      </div>
+    </div>
+    <!-- hardiness end -->
+  </section>
+      <div>Your Hardiness Zone: <span class="hardiness"> </span></div>
+    </section>
+
+  <div class="columns">
+    <section class="column is-one-quarter">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-title is-centered custom-font">My Plants</div>
+          </div>
+          <div class="card-content"></div>
+        </div>
+        <div class="buttons is-centered equal-width-buttons">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button is-outlined is-rounded custom-font custom-width hard" aria-haspopup="true" aria-controls="dropdown-menu5">
+                <span>Hardiness Zone</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item custom-font">
+                  <p>1</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>2</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>3</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>4</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>5</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>6</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>7</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>8</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>9</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>10</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>11</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>12</p>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="buttons is-centered equal-width-buttons">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button is-outlined is-rounded custom-font custom-width door" aria-haspopup="true" aria-controls="dropdown-menu5">
+                <span>Indoor/Outdoor</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+          <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item custom-font">
+                <p>Indoor</p>
+              </div>
+              <div class="dropdown-item custom-font">
+                <p>Outdoor</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="buttons is-centered">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button is-outlined is-rounded custom-font custom-width sun" aria-haspopup="true" aria-controls="dropdown-menu5">
+                <span>Sunlight</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+          <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item custom-font">
+                <p>Full sun</p>
+              </div>
+              <div class="dropdown-item custom-font">
+                <p>Part sun/Part shade</p>
+              </div>
+              <div class="dropdown-item custom-font">
+                <p>Part shade</p>
+              </div>
+              <div class="dropdown-item custom-font">
+                <p>Filtered shade</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="buttons is-centered">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button is-outlined is-rounded custom-font custom-width water" aria-haspopup="true" aria-controls="dropdown-menu5">
+                <span>Water</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+          <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+            <div class="dropdown-content">
+              <div class="dropdown-item custom-font">
+                <p>Average</p>
+              </div>
+              <div class="dropdown-item custom-font">
+                <p>Frequent</p>
+              </div>
+              <div class="dropdown-item custom-font">
+                <p>Minimum</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="buttons is-centered equal-width-buttons">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button is-outlined is-rounded custom-font custom-width cycle" aria-haspopup="true" aria-controls="dropdown-menu5">
+                <span>Life cycle</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item custom-font">
+                  <p>Perennial</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>Annual</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons is-centered equal-width-buttons">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button is-outlined is-rounded custom-font custom-width edible" aria-haspopup="true" aria-controls="dropdown-menu5">
+                <span>Edible</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item custom-font">
+                  <p>Yes</p>
+                </div>
+                <div class="dropdown-item custom-font">
+                  <p>No</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <textarea class="textarea" placeholder="Plant name" rows="1"></textarea>
+        </div>
+        <br />
+        <div class="buttons is-centered submit">
+          <button class="button is-outlined search-button">Search</button>
+        </div>
+    </section>    
+
+      <section class="column">
+        <div class="container is-centered table-container">
+          <table
+            class="table is-bordered is-striped is-hoverable"
+            id="tbl"
+          >
+            <thead id="thead">
+              <tr>
+                <th><p>Plant Image</p></th>
+                <th><p>Scientific Name</p></th>
+                <th><p>Common Name</p></th>
+                <th><p>Other Name(s)</p></th>
+                <th><p>Watering Preferences</p></th>
+                <th><p>Sunlight Preferences</p></th>
+                <th><p>Cycle</p></th>
+                <th><p>Add to My Plant</p></th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer type="text/javascript" src="bulma.js"></script>
+    <script defer type="text/javascript" src="perenual.js"></script>
+    <script defer type="text/javascript" src="hardiness.js"></script>
+    
+  </body>
+</html>
